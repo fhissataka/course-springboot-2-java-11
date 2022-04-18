@@ -64,6 +64,10 @@ import com.fhissa.course.entities.pk.OrderItemPK;
 		id.setProduct(product);
 	}
 	
+	public Double getSubTotal() {
+		return price * quantity;
+	}
+	
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
